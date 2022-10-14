@@ -1,0 +1,99 @@
+---
+export interface Props {
+  title: string;
+}
+
+import "../scss/tailwind.scss";
+import "@iconscout/unicons/css/line.css"
+
+const { title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html
+  lang='es'
+  class='light scroll-smooth'
+  dir='ltr'>
+  <head>
+    <meta charset='UTF-8' />
+    <link
+      rel='icon'
+      type='image/svg+xml'
+      href='/favicon.svg'
+    />
+
+    <meta
+      name='generator'
+      content={Astro.generator}
+    />
+    <title>{title}</title>
+
+    <meta
+      name='viewport'
+      content='width=device-width, initial-scale=1, shrink-to-fit=no'
+    />
+    <meta
+      name='description'
+      content='Clínica Psiquiátrica'
+    />
+    <meta
+      name='keywords'
+      content='clínica, psicólogo, coruña'
+    />
+    <meta
+      name='author'
+      content='Galicloud'
+    />
+    <meta
+      name='website'
+      content='https://clinicarebeca.com'
+    />
+    <!-- <meta name="email" content="support@shreethemes.in" /> -->
+    <!-- <meta name="version" content="1.5.0" /> -->
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge" /> -->
+
+    <!-- favicon -->
+    <link
+      rel='shortcut icon'
+      href='assets/images/favicon.ico'
+    />
+    <!-- <link
+      href='assets/libs/@iconscout/unicons/css/line.css'
+      type='text/css'
+      rel='stylesheet'
+    /> -->
+    <!-- <link rel="stylesheet" href="https://unicons.iconscout.com/release-pro/v4.0.0/css/solid.css"> -->
+
+    <!-- <link rel="stylesheet" href="https://unicons.iconscout.com/release-pro/v4.0.0/css/solid.css"> -->
+    <!-- <link
+      rel='stylesheet'
+      href='assets/css/icons.css'
+    /> -->
+    <!-- <link
+      rel='stylesheet'
+      href='assets/css/tailwind.css'
+    /> -->
+  </head>
+  <body class="font-nunito text-base text-black dark:text-white dark:bg-slate-900">
+    <slot />
+    <style is:global>
+      :root {
+        --accent: 124, 58, 237;
+        --accent-gradient: linear-gradient(
+          45deg,
+          rgb(var(--accent)),
+          #da62c4 30%,
+          white 60%
+        );
+      }
+      html {
+        font-family: system-ui, sans-serif;
+        background-color: #f6f6f6;
+      }
+      code {
+        font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
+          DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
+      }
+    </style>
+  </body>
+</html>
