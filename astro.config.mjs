@@ -9,6 +9,7 @@ import tailwind from "@astrojs/tailwind";
 export default defineConfig({
   site: 'https://carlosgalicloud.github.io',
   base: '/clinica-rebeca',
+  trailingSlash: 'always',
   integrations: [
     tailwind({
       // Example: Disable injecting a basic `base.css` import on every page.
