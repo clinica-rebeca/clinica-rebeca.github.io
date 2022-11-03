@@ -7,8 +7,8 @@ import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://carlosgalicloud.github.io',
-  base: '/clinica-rebeca',
+  site: 'https://carlosgalicloud.github.io/clinica-rebeca',
+  // base: '/clinica-rebeca',
   // trailingSlash: 'always',
   integrations: [
     tailwind({
