@@ -1,17 +1,16 @@
 ---
-
 ---
 
 <!-- Start Navbar -->
 <nav id="topnav" class="defaultscroll is-sticky">
     <div class="container">
         <!-- Logo container-->
-        <a class="logo pl-0" href="index.html">
+        <a class="logo pl-0" href="/">
             <span class="inline-block dark:hidden">
-                <img src="assets/images/placa_rebeca.png" class="l-dark w-32" height="24" alt="">
-                <img src="assets/images/placa_rebeca.png" class="l-light  w-32" height="24" alt="">
+                <img src="/assets/images/logo_rebeca_color.svg" class="l-dark w-32" height="24" alt="">
+                <img src="/assets/images/logo_rebeca_blanco.svg" class="l-light  w-32" height="24" alt="">
             </span>
-            <img src="assets/images/placa_rebeca.png" height="24" class="hidden dark:inline-block  w-32" alt="">
+            <img src="/assets/images/logo_rebeca_blanco.svg" height="24" class="hidden dark:inline-block  w-32" alt="">
         </a>
 
         <!-- End Logo container-->
@@ -30,30 +29,30 @@
         </div>
 
         <!--Login button Start-->
-        <ul class="buy-button list-none mb-0">
-            <li class="inline mb-0">
-                <a href="">
-                    <span class="login-btn-primary"><span class="btn btn-icon rounded-full bg-indigo-600/5 hover:bg-indigo-600 border-indigo-600/10 hover:border-indigo-600 text-indigo-600 hover:text-white"><i data-feather="settings" class="h-4 w-4"></i></span></span>
-                    <span class="login-btn-light"><span class="btn btn-icon rounded-full bg-gray-50 hover:bg-gray-200 dark:bg-slate-900 dark:hover:bg-gray-700 hover:border-gray-100 dark:border-gray-700 dark:hover:border-gray-700"><i data-feather="settings" class="h-4 w-4"></i></span></span>
-                </a>
-            </li>
-            
-            <li class="inline pl-1 mb-0">
-                <a href="https://1.envato.market/techwind" target="_blank">
-                    <div class="login-btn-primary"><span class="btn btn-icon rounded-full bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white"><i data-feather="shopping-cart" class="h-4 w-4"></i></span></div>
-                    <div class="login-btn-light"><span class="btn btn-icon rounded-full bg-gray-50 hover:bg-gray-200 dark:bg-slate-900 dark:hover:bg-gray-700 hover:border-gray-100 dark:border-gray-700 dark:hover:border-gray-700"><i data-feather="shopping-cart" class="h-4 w-4"></i></span></div>
-                </a>
-            </li>
-        </ul>
+<!--        <ul class="buy-button list-none mb-0">-->
+<!--            <li class="inline mb-0">-->
+<!--                <a href="">-->
+<!--                    <span class="login-btn-primary"><span class="btn btn-icon rounded-full bg-indigo-600/5 hover:bg-indigo-600 border-indigo-600/10 hover:border-indigo-600 text-indigo-600 hover:text-white"><i data-feather="settings" class="h-4 w-4"></i></span></span>-->
+<!--                    <span class="login-btn-light"><span class="btn btn-icon rounded-full bg-gray-50 hover:bg-gray-200 dark:bg-slate-900 dark:hover:bg-gray-700 hover:border-gray-100 dark:border-gray-700 dark:hover:border-gray-700"><i data-feather="settings" class="h-4 w-4"></i></span></span>-->
+<!--                </a>-->
+<!--            </li>-->
+<!--            -->
+<!--            <li class="inline pl-1 mb-0">-->
+<!--                <a href="https://1.envato.market/techwind" target="_blank">-->
+<!--                    <div class="login-btn-primary"><span class="btn btn-icon rounded-full bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white"><i data-feather="shopping-cart" class="h-4 w-4"></i></span></div>-->
+<!--                    <div class="login-btn-light"><span class="btn btn-icon rounded-full bg-gray-50 hover:bg-gray-200 dark:bg-slate-900 dark:hover:bg-gray-700 hover:border-gray-100 dark:border-gray-700 dark:hover:border-gray-700"><i data-feather="shopping-cart" class="h-4 w-4"></i></span></div>-->
+<!--                </a>-->
+<!--            </li>-->
+<!--        </ul>-->
         <!--Login button End-->
 
         <div id="navigation">
             <!-- Navigation Menu-->   
             <ul class="navigation-menu nav-light">
-                <li><a href="index.html" class="sub-menu-item">Inicio</a></li>
+                <li><a href="/" class="sub-menu-item">Inicio</a></li>
                 
                 <li class="has-submenu parent-parent-menu-item">
-                    <a href="/sobre-mi">Sobre mí</a>
+                    <a href="/sobre-mi/">Sobre mí</a>
 					<!-- <span class="menu-arrow"></span> -->
 
                     <!-- <ul class="submenu megamenu">
@@ -124,8 +123,8 @@
                     </ul> -->
                 </li>
 
-                <li class="has-submenu parent-parent-menu-item">
-                    <a href="javascript:void(0)">Servicios</a>
+<!--                <li class="has-submenu parent-parent-menu-item">-->
+<!--                    <a href="javascript:void(0)">Servicios</a>-->
 					<!-- <span class="menu-arrow"></span> -->
                     <!-- <ul class="submenu">
                         <li class="has-submenu parent-menu-item"><a href="javascript:void(0)"> Company </a><span class="submenu-arrow"></span>
@@ -265,7 +264,7 @@
                             </ul>  
                         </li>
                     </ul> -->
-                </li>
+<!--                </li>-->
 
 <!--                <li class="has-submenu parent-parent-menu-item">-->
 <!--                    <a href="javascript:void(0)">Portfolio</a>-->
@@ -336,9 +335,20 @@
                     </ul>
                 </li> -->
                 
-                <li><a href="/contacto" class="sub-menu-item">Contacto</a></li>
+                <li><a href="/contacto/" class="sub-menu-item">Contacto</a></li>
             </ul><!--end navigation menu-->
         </div><!--end navigation-->
     </div><!--end container-->
 </nav><!--end header-->
+
+<script type="text/javascript">
+    const header = document.getElementById("topnav");
+    window.onscroll = function() {
+        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+            header.classList.add("nav-sticky");
+        } else {
+            header.classList.remove("nav-sticky");
+        }
+    };
+</script>
 <!-- End Navbar -->
