@@ -27,11 +27,11 @@ import Footer from "../components/Footer.astro";
         <Menu />
 
         <!-- Start Hero -->
-        <section class="relative table w-full py-36 bg-[url('../../assets/images/rebeca1_crop.webp')] bg-top bg-no-repeat bg-cover">
+        <section class="relative table w-full py-36 bg-[url('../../assets/images/rebeca6.webp')] bg-center bg-no-repeat bg-cover">
             <div class="absolute inset-0 bg-black opacity-80"></div>
             <div class="container">
                 <div class="grid grid-cols-1 pb-8 text-center mt-10">
-                    <h3 class="mb-6 md:text-4xl text-3xl md:leading-normal leading-normal font-medium text-white">¡Hola! <br> ¿Puedo ayudarte?</h3>
+                    <h3 class="mb-6 md:text-4xl text-3xl md:leading-normal leading-normal font-medium text-white">Rebeca Gil Liarte<br>Centro de Psicología</h3>
 
 <!--                    <div class="text-center subcribe-form mt-4 pt-2">-->
 <!--                        <form class="relative mx-auto max-w-xl">-->
@@ -64,8 +64,9 @@ import Footer from "../components/Footer.astro";
                 <div class="grid grid-cols-1 pb-8 text-center">
                     <h3 class="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">Encuentra la ayuda que necesitas</h3>
 
-                    <p class="text-slate-400 max-w-xl mx-auto">Cuento con más de 100 años de experiencia en <strong>psicología sanitaria</strong>.</p>
-                    <p class="text-slate-400 max-w-xl mx-auto">Tengo mi clínica de psicología en <strong>A Coruña</strong>.</p>
+                    <p class="text-slate-500 max-w-xl mx-auto">Cuento con mucha experiencia en <strong>psicología sanitaria</strong>.</p>
+                    <p class="text-slate-500 max-w-xl mx-auto">Consultas tanto online como presenciales.</p>
+
                 </div><!--end grid-->
 
                 <div class="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 mt-6 gap-[30px]">
@@ -75,11 +76,11 @@ import Footer from "../components/Footer.astro";
                         </div>
 
                         <div class="content mt-7">
-                            <a href="helpcenter-faqs.html" class="title h5 text-lg font-medium hover:text-indigo-600">¿Por qué?</a>
-                            <p class="text-slate-400 mt-3">Quiénes somos, de dónde venimos y adonde vamos. Estamos solos en la galaxia.</p>
+                            <a href="/acerca-de/" class="title h5 text-lg font-medium hover:text-indigo-600">¿Quién soy?</a>
+                            <p class="text-slate-500 mt-3">Descubre quién soy. Te explico mi experiencia y las áreas en las que estoy formada.</p>
                             
                             <div class="mt-5">
-                                <a href="/sobre-mi/" class="btn btn-link text-indigo-600 hover:text-indigo-600 after:bg-indigo-600 duration-500 ease-in-out">Sobre mí <i class="uil uil-arrow-right"></i></a>
+                                <a href="/acerca-de/" class="btn btn-link text-indigo-600 hover:text-indigo-600 after:bg-indigo-600 duration-500 ease-in-out">Sobre mí <i class="uil uil-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -90,11 +91,17 @@ import Footer from "../components/Footer.astro";
                         </div>
 
                         <div class="content mt-7">
-                            <a href="/contacto/" class="title h5 text-lg font-medium hover:text-indigo-600">¿Cuándo?</a>
-                            <p class="text-slate-400 mt-3">Llámame para solicitar una cita. <br>Consultas tanto online como presenciales.</p>
-                            
+                            <a href="/servicios/" class="title h5 text-lg font-medium hover:text-indigo-600">¿Qué hago?</a>
+                            <p class="text-slate-500 mt-3">Me especializo en trastornos de la infancia y la adolescencia, como
+                                <abbr title="Trastorno Obsesivo Compulsivo">TOC</abbr>,
+                                <abbr title="Trastorno por Déficit de Atención e Hiperactividad">TDAH</abbr>,
+                                <abbr title="Trastorno de Aprendizaje no Verbal">TANV</abbr>,
+                                <abbr title="Trastornos de la Conducta Alimentaria">TCA</abbr>, etc.
+
                             <div class="mt-5">
-                                <a href="/contacto/" class="btn btn-link text-indigo-600 hover:text-indigo-600 after:bg-indigo-600 duration-500 ease-in-out">Solicitar cita <i class="uil uil-arrow-right"></i></a>
+                                <a href="/servicios/" class="btn btn-link text-indigo-600 hover:text-indigo-600 after:bg-indigo-600 duration-500 ease-in-out">
+                                    Servicios <i class="uil uil-arrow-right"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -105,8 +112,9 @@ import Footer from "../components/Footer.astro";
                         </div>
 
                         <div class="content mt-7">
-                            <a href="/contacto/" class="title h5 text-lg font-medium hover:text-indigo-600">¿Dónde?</a>
-                            <p class="text-slate-400 mt-3">Mi clínica de psicología médica está situada en A Coruña, en la calle Payo Gómez 16, 5ºB.</p>
+                            <a href="/contacto/" class="title h5 text-lg font-medium hover:text-indigo-600">¿Dónde estoy?</a>
+                            <p class="text-slate-500 mt-3">Mi clínica de psicología médica está situada en A Coruña, en la calle Payo Gómez 16, 5ºB.
+                            </p>
 
 
                             <div class="mt-5">
@@ -121,7 +129,7 @@ import Footer from "../components/Footer.astro";
                 <div class="grid grid-cols-1 pb-8 text-center">
                     <h3 class="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">Servicios del centro</h3>
 
-                    <p class="text-slate-400 max-w-xl mx-auto">Psicología general sanitaria</p>
+                    <p class="text-slate-500 max-w-xl mx-auto">Psicología general sanitaria</p>
                 </div><!--end grid-->
 
                 <div class="grid md:grid-cols-2 grid-cols-1 mt-8 gap-[30px]">
@@ -129,7 +137,7 @@ import Footer from "../components/Footer.astro";
                         <i data-feather="help-circle" class="fea icon-ex-md text-indigo-600 mr-3"></i>
                         <div class="flex-1">
                             <h5 class="mb-2 text-xl font-semibold">Experiencia en  <span class="text-indigo-600">psicología</span></h5>
-                            <p class="text-slate-400">
+                            <p class="text-slate-500">
                                 En este momento, ponemos nuestros conocimientos y experiencia a vuestra disposición a la hora de intervenir sobre todos los aspectos en los que puede estar afectando el Covid 19, los principales problemas que estamos observando en consulta son ansiedad, trastorno obsesivo compulsivo, problemas de comunicación en pareja o familia, gestión de la soledad, trastornos del sueño…
                             </p>
                         </div>
@@ -139,7 +147,7 @@ import Footer from "../components/Footer.astro";
                         <i data-feather="help-circle" class="fea icon-ex-md text-indigo-600 mr-3"></i>
                         <div class="flex-1">
                             <h5 class="mb-2 text-xl font-semibold">Terapia</h5>
-                            <p class="text-slate-400">
+                            <p class="text-slate-500">
                                 Comenzar una terapia es un acto inteligente y valiente; supone dar el paso de reconocer y aprender mejorar aquellas áreas que no te están permitiendo disfrutar de tu vida. Muchas veces no se trata de cambiar lo que hay en tu vida sino tu actitud ante la misma. Pedir ayuda no es fácil, por eso es importante elegir un psicólogo con quien te encuentres cómodo, entendido y que te proporcione herramientas.
                             </p>
                         </div>
@@ -149,7 +157,7 @@ import Footer from "../components/Footer.astro";
                         <i data-feather="help-circle" class="fea icon-ex-md text-indigo-600 mr-3"></i>
                         <div class="flex-1">
                             <h5 class="mb-2 text-xl font-semibold"> ¿Cómo trabajo?</h5>
-                            <p class="text-slate-400">
+                            <p class="text-slate-500">
                                 La forma de trabajo es sencilla: En una primera consulta, comentaremos la situación que te genera malestar y como la manejas, contemplaremos qué variables han afectado y valoraremos las habilidades necesarias para la evolución. En función de esta información comentaremos cómo abordaremos el problema.
                             </p>
                         </div>
@@ -159,7 +167,7 @@ import Footer from "../components/Footer.astro";
                         <i data-feather="help-circle" class="fea icon-ex-md text-indigo-600 mr-3"></i>
                         <div class="flex-1">
                             <h5 class="mb-2 text-xl font-semibold"> Terapia <span class="text-indigo-600">cognitivo conductual</span></h5>
-                            <p class="text-slate-400">La terapia cognitivo conductual es una intervención corta y práctica, el pasado del paciente es importante pero se basa en dar solución hoy. La terapia cognitivo conductual es científica, basada en rigurosos métodos experimentales, con un alto porcentaje de éxito.</p>
+                            <p class="text-slate-500">La terapia cognitivo conductual es una intervención corta y práctica, el pasado del paciente es importante pero se basa en dar solución hoy. La terapia cognitivo conductual es científica, basada en rigurosos métodos experimentales, con un alto porcentaje de éxito.</p>
                         </div>
                     </div>
                 </div><!--end grid-->
@@ -169,7 +177,7 @@ import Footer from "../components/Footer.astro";
                 <div class="grid grid-cols-1 text-center">
                     <h3 class="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">¿Tienes alguna consulta?</h3>
 
-                    <p class="text-slate-400 max-w-xl mx-auto">Si tienes cualquier duda sobre psicología sanitaria, quieres solicitar una cita o cualquier otra necesidad.</p>
+                    <p class="text-slate-500 max-w-xl mx-auto">Si tienes cualquier duda sobre psicología sanitaria, quieres solicitar una cita o cualquier otra necesidad.</p>
                 
                     <div class="mt-6">
                         <a href="/contacto/" class="btn bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md mr-2 mt-2"><!--<i class="uil uil-phone"></i>--> Contacta conmigo</a>
