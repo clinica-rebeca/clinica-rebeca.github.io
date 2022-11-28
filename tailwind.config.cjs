@@ -15,6 +15,7 @@ module.exports = {
         // },
         fontFamily: {
             'nunito': ['"Nunito", sans-serif'],
+            'montserrat': ['"Montserrat", sans-serif'],
         },
         container: {
             center: true,
