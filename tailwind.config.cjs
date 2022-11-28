@@ -30,9 +30,20 @@ module.exports = {
         },
         extend: {
             colors: {
-                'dark': '#3c4858',
-                'black': '#161c2d',
-                'dark-footer': '#192132',
+                'dark': '#333333',
+                'black': '#555555',
+                'dark-footer': '#333333',
+                'rebeca': {
+                    100: '#cffafe',
+                    200: '#a5f3fc',
+                    300: '#67e8f9',
+                    400: '#68D2DF',
+                    500: '#06b6d4',
+                    600: '#00AEC7',
+                    700: '#0e7490',
+                    800: '#155e75',
+                    900: '#164e63',
+                },
             },
 
             boxShadow: {
